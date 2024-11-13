@@ -1,0 +1,706 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins",sans-serif ;
+}
+
+.navbar {
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-name {
+  font-size: 35px;
+  margin-left: 150px;
+  color: rgb(25, 25, 160);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo-name:hover {
+  transform: scale(1.1);
+}
+
+.home-services {
+  font-size: 18px;
+  display: flex;
+}
+
+.home-services .a {
+  margin-right: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: rgb(207, 207, 207);
+}
+
+.home-services .a:hover {
+  color: rgb(25, 25, 160);
+  border-bottom: 3px solid rgb(25, 25, 160);
+  transition: 10ms ease;
+}
+
+
+.blue-home {
+  border-bottom: 3px solid rgb(25, 25, 160);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(25, 25, 160);
+  margin-right: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.blue-home:hover {
+  color: rgb(25, 25, 160);
+  border-bottom: 3px solid rgb(25, 25, 160);
+  transition: 10ms ease;
+}
+
+/* --------------------------------------Hero-tsx-------------------------------------------- */
+
+.hero-section {
+  height: 110vh;
+  background-color: black;
+  display: flex;
+}
+
+.img-div {
+  height: 581px;
+  width: 437px;
+  position: relative;
+  left: 140px;
+  top: 40px;
+  border-radius: 50%;
+}
+
+.img-div .img {
+  /* image-resolution: calc(1);
+  filter: contrast(1.5);
+  filter: saturate(1.3);
+  filter: brightness(1.2); */
+  border-radius: 50%;
+}
+
+.text-div {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+
+.text-div .its-hammad {
+  font-size: 60px;
+  color: white;
+}
+
+.its-hammad span {
+  color: blue;
+}
+
+.text-div .p-2 {
+  font-size: 50px;
+  color: white;
+}
+
+.p-2 span {
+  color: blue;
+}
+
+.text-div p {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  color: white;
+  /* word-wrap: 11px; */
+  line-height: 1.5;
+}
+
+/* -------------------------------------------Introduction------------------------------------------------- */
+
+.introduction {
+  height: 103vh;
+  width: 100;
+  background-color: black;
+  border-top: 8px solid blue;
+}
+
+.flex-div-intro {
+  height: 310px;
+  width: 98.6.4vw;
+  background-color: transparent;
+  margin-top: 15px;
+  display: flex;
+}
+
+.about-div {
+  height: 600px;
+  width: 800px;
+  background-color: brown;
+  background-image: url(../../Public/images/about.png);
+  background-size: cover;
+  border: 4px solid blue;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+.about-div p {
+  margin-left: 10px;
+  margin-top: 500px;
+  color: aqua;
+  font-weight: 500;
+}
+
+.current-learning {
+  background-image: url(../../Public/images/current\ learning.jpg);
+  background-size: cover;
+  height: 295px;
+  width: 500px;
+  background-color: blue;
+  margin-left: 10px;
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+.current-learning p {
+  font-size: 16px;
+  color: grey;
+  margin-top: 230px;
+  margin-left: 10px;
+}
+
+.flex-2-about-hireme {
+  height: 300px;
+  width: 100;
+  background-color: transparent;
+}
+
+.hire-me {
+  height: 291px;
+  width: 495px;
+  background-color: chartreuse;
+  margin-left: 834px;
+  border: 4px solid blue;
+  border-radius: 15px;
+  background-image: url(../../Public/images/hire-me.avif);
+}
+
+.hire-me .p-1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hire-me .p-2 {
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+/* ------------------------------------Skills--------------------------------------------------------------------- */
+
+.skills-section {
+  height: 203vh;
+  width: 100;
+  background-color: black;
+}
+
+.skills-heading {
+  background-color: black;
+  position: relative;
+  top: 20px;
+  height: 50px;
+}
+
+.skills-heading p {
+  font-size: 40px;
+  margin-left: 5px;
+  text-align: center;
+  color: rgb(59, 59, 59);
+}
+
+.skills-heading span {
+  color: blue;
+  font-weight: 500;
+}
+
+.skills-card {
+  height: 200vh;
+  width: 100;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.card-1 {
+  height: 250px;
+  width: 1300px;
+  background-color: rgb(0, 0, 51);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+.card-1 .text {
+  font-size: 40px;
+  color: white;
+  /* margin: auto; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.card-1 span {
+  margin-top: 20px;
+}
+
+.card-1 .percentage {
+  height: 100px;
+  /* background-color: black; */
+  /* background-color: rgb(0, 0, 48); */
+  width: 100px;
+  border-radius: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  margin-right: 10px;
+}
+
+.percentage p {
+  font-size: 40px;
+  display: flex;
+  color: grey;
+}
+
+
+
+
+
+
+.card-2 {
+  height: 250px;
+  width: 1300px;
+  background-color: rgb(0, 0, 51);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+.card-2 .text {
+  font-size: 40px;
+  color: white;
+  /* margin: auto; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.card-2 span {
+  margin-top: 20px;
+}
+
+
+
+.card-2 .percentage {
+  height: 100px;
+  /* background-color: black; */
+  /* background-color: rgb(0, 0, 48); */
+  width: 100px;
+  border-radius: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  margin-right: 10px;
+}
+
+.percentage p {
+  font-size: 40px;
+  display: flex;
+  color: grey;
+}
+
+
+.card-3 {
+  height: 250px;
+  width: 1300px;
+  background-color: rgb(0, 0, 51);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+.card-3 .text {
+  font-size: 40px;
+  color: white;
+  /* margin: auto; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.card-3 span {
+  margin-top: 20px;
+}
+
+.card-3 .percentage {
+  height: 100px;
+  /* background-color: black; */
+  /* background-color: rgb(0, 0, 48); */
+  width: 100px;
+  border-radius: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  margin-right: 10px;
+}
+
+.percentage p {
+  font-size: 40px;
+  display: flex;
+  color: grey;
+}
+
+.card-4 {
+  height: 250px;
+  width: 1300px;
+  background-color: rgb(0, 0, 51);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+.card-4 .text {
+  font-size: 40px;
+  color: white;
+  /* margin: auto; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.card-4 span {
+  margin-top: 20px;
+}
+
+.card-4 .percentage {
+  height: 100px;
+  /* background-color: black; */
+  /* background-color: rgb(0, 0, 48); */
+  width: 100px;
+  border-radius: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  margin-right: 10px;
+}
+
+.percentage p {
+  font-size: 40px;
+  display: flex;
+  color: grey;
+}
+
+/* ------------------------------------Projects--------------------------------------------------------------------- */
+
+.Projects-section {
+  height: 150vh;
+  width: 100;
+  background-color: black;
+}
+
+.my-projects-heading {
+  height: 50px;
+  width: 100;
+  background-color: black;
+  position: relative;
+  top: 10px;
+}
+
+.my-projects-heading p {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.my-projects-heading span {
+  color: blue;
+}
+
+.projects-div-flex {
+  height: 400px;
+  width: 100;
+  background-color: transparent;
+  position: relative;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pcard-1 {
+  margin-top: 10px;
+  height: 340px;
+  width: 300px;
+  background-color: rgb(0, 0, 70);
+  border: 2px solid blue;
+  border-radius: 14px;
+}
+
+.pcard-1 .image-div {
+  height: 250px;
+  width: 93%;
+  background-image: url("../../Public/images/pcard1netflix.png");
+  background-size: cover;
+  background-color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.pp1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pp2 {
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+}
+
+
+.pcard-2 {
+  margin-top: 10px;
+  height: 340px;
+  width: 300px;
+  background-color: rgb(0, 0, 70);
+  border: 2px solid blue;
+  border-radius: 14px;
+}
+
+.pcard-2 .image2-div {
+  height: 250px;
+  width: 93%;
+  background-image: url("../../Public/images/discord.png");
+  background-size: cover;
+  background-color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.pcard-2 .pp1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pcard-2 .pp2 {
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+}
+
+
+.projects-div-flex-2 {
+  height: 400px;
+  width: 100;
+  background-color: transparent;
+  position: relative;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pcard-3 {
+  margin-top: 10px;
+  height: 340px;
+  width: 300px;
+  background-color: rgb(0, 0, 70);
+  border: 2px solid blue;
+  border-radius: 14px;
+}
+
+.pcard-3 .image3-div {
+  height: 250px;
+  width: 93%;
+  background-image: url("../../Public/images/amazonlogo.png");
+  background-size: cover;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.pcard-3 .pp1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pcard-3 .pp2 {
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+}
+
+
+.pcard-4 {
+  margin-top: 10px;
+  height: 340px;
+  width: 300px;
+  background-color: rgb(0, 0, 70);
+  border: 2px solid blue;
+  border-radius: 14px;
+}
+
+.pcard-4 .image4-div {
+  height: 250px;
+  width: 93%;
+  background-image: url("../../Public/images/minecraftlogo.png");
+  background-size: cover;
+  background-color: green;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.pcard-4 .pp1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pcard-4 .pp2 {
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+}
+
+
+/* ------------------------------------Footer--------------------------------------------------------------------- */
+
+
+.Footer-section {
+  height: 50vh;
+  width: 100;
+}
+
+.Footer-section .panel {
+  height: 45vh;
+  width: 100;
+  background-color: rgb(0, 0, 66);
+  display: flex;
+
+
+}
+
+.p-1-panel {
+  font-size: 20px;
+  position: relative;
+  left: 400px;
+  color: white;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.panel span {
+  position: relative;
+  left: -42px;
+  color: blue;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  height: 50px;
+  width: 100;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-icons {
+  color: white;
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+.footer-icons .one {
+  margin-left: 10px;
+}
+
+.footer-icons .two {
+  margin-left: 10px;
+}
+
+.footer-p-2 {
+  color: white;
+}
