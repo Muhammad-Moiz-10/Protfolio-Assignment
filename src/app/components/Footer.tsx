@@ -10,7 +10,7 @@ export default function Footer() {
             <i className="bi bi-linkedin  one "></i>
             <i className="bi bi-github    two"></i>
             </div>
-            <p className="footer-p-2">Copyright © 2024 Hammad Mustafa</p>
+            <p className="footer-p-2">Copyright © 2024 Muhammad Moiz</p>
         </div>
        </div>
 

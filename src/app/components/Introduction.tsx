@@ -3,7 +3,7 @@ export default function Introduction() {
         <div className="introduction">
             <div className="flex-div-intro">
                 <div className="about-div">
-                    <p>My name is Hammad, and I am a front-end developer. I specialize in
+                    <p>My name is Moiz, and I am a front-end developer. I specialize in
                         <br />creating responsive and interactive websites
                         using technologies like HTML, CSS, JavaScript, and TypeScript.I am passionate about coding
                         and en

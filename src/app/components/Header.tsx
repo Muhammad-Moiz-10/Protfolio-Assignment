@@ -4,7 +4,7 @@ export default function Skils() {
     return (
         <body>
         <div className="navbar">
-            <div className="logo-name">Hammad</div>
+            <div className="logo-name">Moiz</div>
             <div className="home-services">
             <Link  href={"http://localhost:3000/"} className="blue-home">Home</Link>
             <Link  href={"/pages/about"} className=" a" >About</Link>
